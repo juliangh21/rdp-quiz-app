@@ -7,8 +7,22 @@ components:
   properties: {col_widths: '{}'}
   name: content_panel
   layout_properties: {slot: default}
-  components: []
+  components:
+  - name: column_panel_1
+    properties: {}
+    type: ColumnPanel
+    layout_properties: {grid_position: 'UBAXVD,SCWFMR'}
+    components:
+    - name: label_2
+      properties: {text: Question 1, align: center, icon: 'fa:apple'}
+      type: Label
+      layout_properties: {grid_position: 'ZYUPKX,KALJKK'}
+      data_bindings: []
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+- name: label_1
+  properties: {text: RDP Learns, align: center}
+  type: Label
+  layout_properties: {slot: title}
