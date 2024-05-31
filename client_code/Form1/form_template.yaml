@@ -3,7 +3,7 @@ properties:
 is_package: true
 events:
 - {name: event, default_event: true}
-custom_component: true
+custom_component: false
 components:
 - type: ColumnPanel
   properties: {col_widths: '{"SCWFMR":60}'}
