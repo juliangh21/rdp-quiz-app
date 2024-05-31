@@ -5,6 +5,7 @@ unique_ids:
   modules: {}
   server_modules: {}
   assets:
+    icon.png: '1717189124299413237880968.0114'
     standard-page.html: 4YDJ4VJTU5FBEWLHJMYLGQPHBYPJ64EE
     theme.css: LZYRPQZASYUSH6U2ZDBPUBFMD4ORW7GO
   scripts: {}
