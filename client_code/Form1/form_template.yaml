@@ -32,81 +32,42 @@ components:
           layout_properties: {grid_position: 'DESAXL,MDHUVQ'}
           data_bindings: []
         data_bindings: []
-      - name: outlined_button_1
+      - name: Parisbutton
         properties: {text: 'Paris
 
             ', role: tonal-button, align: left, font: Inter, font_size: 18}
         type: Button
         layout_properties: {grid_position: 'WIHPWQ,JFTSDE'}
-      - name: outlined_button_3
+        event_bindings: {click: outlined_button_1_click}
+      - name: Berlinbutton
         properties: {text: Berlin, role: tonal-button, align: left, font: Inter, font_size: 18}
         type: Button
         layout_properties: {grid_position: 'NYQBDZ,RGCGSL'}
-      - name: outlined_button_2
+        event_bindings: {click: Berlinbutton_click}
+      - name: brusselsbutton
         properties: {text: Brussels, role: tonal-button, align: left, font: Inter,
           font_size: 18}
         type: Button
         layout_properties: {grid_position: 'BVFAAQ,PIAWXV'}
-      - name: outlined_button_4
+        event_bindings: {click: brusselsbutton_click}
+      - name: lyonbutton
         properties: {text: 'Lyon
 
             ', role: tonal-button, align: left, font: INter, font_size: 18}
         type: Button
         layout_properties: {grid_position: 'KJEESW,MAKHMY'}
-      - name: outlined_button_5
+        event_bindings: {click: lyonbutton_click}
+      - name: submitbutton
         properties: {role: elevated-button, align: left, foreground: 'theme:On Surface',
           text: '      Submit       ', spacing_above: large, icon_align: left_edge,
           spacing_below: none, background: 'theme:Tertiary Container', bold: true}
         type: Button
         layout_properties: {grid_position: 'QGRNOV,LILTKW'}
+        event_bindings: {click: submitbutton_click}
     - name: spacer_1
       properties: {height: 119}
       type: Spacer
       layout_properties: {grid_position: 'GVRMSR,ZWTIXI'}
-    - name: outlined_card_2_copy
-      properties: {role: outlined-card}
-      type: ColumnPanel
-      layout_properties: {grid_position: 'UHVDKO,JDHNGJ'}
-      components:
-      - name: outlined_card_1_copy
-        properties: {role: tonal-card, border: '10', background: '', wrap_on: mobile}
-        type: ColumnPanel
-        layout_properties: {grid_position: 'XUOGQS,GTHTKC'}
-        data_bindings: []
-        components:
-        - name: label_2_copy
-          properties: {text: 'What is the capital of France?', align: center, role: headline,
-            font: Inter}
-          type: Label
-          layout_properties: {grid_position: 'GRFHWK,KMTKQD'}
-          data_bindings: []
-      - name: outlined_button_1_copy
-        properties: {text: 'Paris
-
-            ', role: tonal-button, align: left, font: Inter, font_size: 18}
-        type: Button
-        layout_properties: {grid_position: 'WIHPWQ,JFTSDE'}
-      - name: outlined_button_3_copy
-        properties: {text: Berlin, role: tonal-button, align: left, font: Inter, font_size: 18}
-        type: Button
-        layout_properties: {grid_position: 'NYQBDZ,RGCGSL'}
-      - name: outlined_button_2_copy
-        properties: {text: Brussels, role: tonal-button, align: left, font: Inter,
-          font_size: 18}
-        type: Button
-        layout_properties: {grid_position: 'BVFAAQ,PIAWXV'}
-      - name: outlined_button_4_copy
-        properties: {text: 'Lyon
-
-            ', role: tonal-button, align: left, font: INter, font_size: 18}
-        type: Button
-        layout_properties: {grid_position: 'KJEESW,MAKHMY'}
-      - name: outlined_button_5_copy
-        properties: {role: elevated-button, align: left, foreground: 'theme:On Surface',
-          text: '      Submit       ', spacing_above: large, icon_align: left_edge,
-          spacing_below: none, background: 'theme:Tertiary Container', bold: true}
-        type: Button
-        layout_properties: {grid_position: 'QGRNOV,LILTKW'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
