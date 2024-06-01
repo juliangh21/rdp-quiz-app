@@ -3,10 +3,11 @@ from anvil import *
 
 
 class Form1(Form1Template):
-  answer = "a"
-  selection="0"
-  def __init__(self, **properties):
+  
+  def __init__(self, answer, selection,**properties):
     # Set Form properties and Data Bindings.
+    answer = "a"
+    selection="0"
     
     
     self.init_components(**properties)
@@ -14,23 +15,23 @@ class Form1(Form1Template):
     # Any code you write here will run before the form opens.
   def Berlinbutton_click(self, **event_args):
     """This method is called when the button is clicked"""
-    selection = 'b'
+    self.selection = 'b'
     
 
   def brusselsbutton_click(self, **event_args):
     """This method is called when the button is clicked"""
-    selection = 'c'
+    self.selection = 'c'
     
 
   def lyonbutton_click(self, **event_args):
     """This method is called when the button is clicked"""
-    selection = 'd'
+    self.selection = 'd'
 
   def submitbutton_click(self, **event_args):
     """This method is called when the button is clicked"""
-    if selection == answer:
+    if self.selection == self.answer:
       print("correct")
 
   def outlined_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    selectoin = 'a'
+    self.selection = 'a'
