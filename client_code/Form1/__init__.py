@@ -34,3 +34,4 @@ class Form1(Form1Template):
   def outlined_button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.selection = 'a'
+    
