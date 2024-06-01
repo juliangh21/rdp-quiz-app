@@ -4,10 +4,9 @@ from anvil import *
 
 class Form1(Form1Template):
   
-  def __init__(self, answer, selection,**properties):
+  def __init__(self,**properties):
     # Set Form properties and Data Bindings.
-    answer = "a"
-    selection="0"
+    
     
     
     self.init_components(**properties)
